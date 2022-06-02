@@ -1,0 +1,172 @@
+*{
+    vertical-align: top;
+}
+@media screen and (max-width: 902px){
+    
+
+.header{
+   background-color:lightgreen;
+   height:7vh;
+}
+.card{
+    width: 40vw;
+    height: auto;
+    background-color: white;
+    border: blue solid 1px;
+    border-radius: 1vw;
+    flex-wrap: nowrap;
+    margin: 1vw;
+}
+.title{
+    margin-right: 15vw;
+    margin-top: 4vw ;
+    font-size: 6vw;
+    color: red;
+    font-weight: bold;
+}
+.cardContent{
+  margin-top: 2vw;
+  font-weight: bold;
+  font-size: 4.5vw;
+  margin-right: 1vw;
+}
+
+.updateButton{
+    width: 30vw;
+    height: 5vh;
+    margin: 3vw;
+    margin-right: 4.5vw;
+    background-color: lightgreen;
+    border: red solid 1px;
+    border-radius: 1vw;
+}
+.container{
+    background-color: lightslategray;
+    width: 90vw;
+    padding: 2vw;
+    margin: auto;
+    height: auto;
+    display: flex; 
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+.input{
+    width: 70vw;
+    height:5vh;
+    margin: 8vw;
+    margin-top: 0;
+    border:blue solid 1px;
+    /* flex-grow: 1; */
+   
+    
+    border-radius: 2vw;
+}
+.label{
+    margin-right:8vw ;
+    margin-top: 1vw;
+}
+.button{
+    background-color: lightgreen;
+    width: 70vw;
+    height:6vh;
+    margin-right: 8vw;
+    margin-bottom: 2vw;
+    border-radius: 2vw;
+    border: red solid 1px;
+}
+.search{
+    height:5vh;
+    background-color: lightgreen;
+    display: flex;
+}
+.searchIcon{
+    width:5vw;
+    height: auto;
+    display: inline-block;
+}
+
+}
+
+@media screen and (min-width: 902px){
+    
+
+    .header{
+       background-color:lightgreen;
+       height:7vh;
+    }
+    .card{
+        width: 20vw;
+        height: auto;
+        background-color: white;
+        border: blue solid 1px;
+        border-radius: 1vw;
+        flex-wrap: nowrap;
+        margin: 1vw;
+    }
+    .title{
+        margin-right: 7vw;
+        margin-top: 4vw ;
+        font-size: 3vw;
+        color: red;
+        font-weight: bold;
+    }
+    .cardContent{
+      margin-top: 2vw;
+      font-weight: bold;
+      font-size: 2vw;
+      margin-right: 1vw;
+    }
+    
+    .updateButton{
+        width: 15vw;
+        height: 5vh;
+        margin: 2.5vw;
+        background-color: lightgreen;
+        border: red solid 1px;
+        border-radius: 1vw;
+    }
+    .container{
+        background-color: lightslategray;
+        width: 90vw;
+        padding: 2vw;
+        margin: auto;
+        height: auto;
+        display: flex; 
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+    }
+    .input{
+        width:20vw;
+        height:5vh;
+        margin-right:35vw ;
+        margin-bottom: 1vw;
+        border:blue solid 1px;
+        /* flex-grow: 1; */
+        border-radius: 0.5vw;
+    }
+    .label{
+        margin-right:35vw ;
+        margin-top: 1vw;
+    }
+    .button{
+        background-color: lightgreen;
+        width:20vw;
+        height:6vh;
+        margin-right:35vw ;
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+        border-radius: 0.5vw;
+        border: red solid 1px;
+    }
+    .search{
+        height:5vh;
+        background-color: lightgreen;
+        display: flex;
+    }
+    .searchIcon{
+        width:2vw;
+        height: auto;
+        display: inline-block;
+    }
+    
+    }

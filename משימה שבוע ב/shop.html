@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="./product.css" />
+  
+    <title>Document</title>
+</head>
+<body dir="rtl">
+    <header>
+        <h2 class="header"><center>shop</center></h2>
+    </header>
+    <nav>
+        <button id="show">כל המוצרים</button>
+        <button onclick="shop.ShowAddProduct()">הוסף מוצר</button>
+        <button onclick="shop.ShowSearch()">סינון/ חיפוש</button>
+        <button onclick="shop.showManageQty()">ניהול מלאי</button>
+        <button onclick="shop.showCategory()">הוספת קטגוריה</button>
+    </nav>
+    <div id="search" style="display:none;">
+        <div class="searchIcon" ><img class="searchIcon" src="./pic/search.png"/></div>
+        <input type="text" placeholder="חפש מוצר" name="name"  onkeyup="shop.SearchProducts(this)"/>
+        <input type="number" placeholder="מינמום" name="minPrice"  onkeyup="shop.SearchProducts(this)"/>
+        <input type="number" placeholder="מיקסימום" name="maxPrice"  onkeyup="shop.SearchProducts(this)"/>
+        <select name="cat" id="selectCat" onchange="shop.SearchProducts(this)" value="">    
+        </select>
+    </div>
+    <div id="qty" style="display: none;">
+        <button  name="qty0" onclick="shop.manageQty(1)">מוצרים שאזלו במלאי</button>
+        <button  name="qty" onclick="shop.manageQty(2)" >מוצרים עם מלאי נמוך</button>
+    </div>
+    <section>
+    <div id="container" class="container"></div>
+    </section>
+</body>
+<script type="module" src="./shop.js" ></script>
+
+
+</html>
